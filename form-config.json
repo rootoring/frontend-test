@@ -1,0 +1,134 @@
+{
+  "parent": {
+    "name": "Родитель",
+    "items": [
+      {
+        "name": "name",
+        "type": "input",
+        "label": "Имя"
+      },
+      {
+        "name": "gender",
+        "type": "select",
+        "label": "Пол",
+        "additional": {
+          "options": [
+            {
+              "value": "male",
+              "text": "Мужской"
+            },
+            {
+              "value": "female",
+              "text": "Женский",
+              "selected": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "age",
+        "type": "radio",
+        "label": "Возраст",
+        "additional": {
+          "options": [
+            {
+              "value": "10",
+              "text": "От нуля до 10"
+            },
+            {
+              "value": "20",
+              "text": "От 10 до 20",
+              "selected": true
+            },
+            {
+              "value": "30",
+              "text": "От 20 до 30"
+            },
+            {
+              "value": "40",
+              "text": "От 30 и выше"
+            }
+          ]
+        }
+      },
+      {
+        "name": "pass",
+        "type": "password",
+        "label": "Введите пароль"
+      },
+      {
+        "name": "repeat-pass",
+        "type": "password",
+        "label": "Повторите пароль",
+        "additional": {
+          "parent": "pass"
+        }
+      }
+    ]
+  },
+  "child": {
+    "name": "Ребенок",
+    "items": [
+      {
+        "name": "name",
+        "type": "input",
+        "label": "Имя"
+      },
+      {
+        "name": "gender",
+        "type": "select",
+        "label": "Пол",
+        "additional": {
+          "options": [
+            {
+              "value": "male",
+              "text": "Мужской"
+            },
+            {
+              "value": "female",
+              "text": "Женский"
+            }
+          ]
+        }
+      },
+      {
+        "name": "age",
+        "type": "radio",
+        "label": "Возраст",
+        "additional": {
+          "options": [
+            {
+              "value": "10",
+              "text": "От нуля до 10"
+            },
+            {
+              "value": "20",
+              "text": "От 10 до 20"
+            },
+            {
+              "value": "30",
+              "text": "От 20 до 30"
+            },
+            {
+              "value": "40",
+              "text": "От 30 и выше"
+            }
+          ]
+        }
+      },
+      {
+        "name": "pass",
+        "type": "password",
+        "label": "Введите пароль"
+      },
+      {
+        "name": "repeat-pass",
+        "type": "password",
+        "label": "Повторите пароль",
+        "additional": {
+          "parent": "pass"
+        }
+      }
+    ]
+  }
+}
